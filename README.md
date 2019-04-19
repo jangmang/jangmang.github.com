@@ -1,5 +1,5 @@
 ## HTTP
-Angular Essentials(서적 425p)
+Angular Essentials(서 425p)
 - json-server를 사용하여 REST API Mock서버 구축
 ```
 npm install -g json-server
