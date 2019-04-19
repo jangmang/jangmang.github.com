@@ -1,3 +1,31 @@
+## HTTP
+Angular Essentials(서적 425p)
+- json-server를 사용하여 REST API Mock서버 구축
+```
+npm install -g json-server
+```
+- db.json작성
+```
+{
+  "todos": [
+    {
+      "content": "동해물과",
+      "completed": false,
+      "id": 1
+    },
+    {
+      "content": "백두산이",
+      "completed": false,
+      "id": 2
+    }
+  ]
+}
+```
+- 아래의 명령어로 json-server를 실행한다. 생성한 db.json파일의 변경을 감시하도록 옵션을 지정
+```
+json-server --watch db.json
+```
+
 
 ## 리액티브 폼
 https://angular.io/guide/reactive-forms
