@@ -160,6 +160,41 @@ import { Component, ViewEncapsulation, ViewChild, ElementRef, AfterViewInit } fr
 
 현재 위 문제를 회피할 수 있는 방법 중에 가장 권장할 수 있는 방법은 뷰 캡슐화 전략을 ViewEncapsulation.None으로 변경하는 것이다. 이 뷰 캡슐화 전략을 사용하면 컴포넌트에서 지정한 스타일은 글로벌 스타일이 되어 다른 다른 컴포넌트에 영향을 주므로 주의해야 한다.
 
+## Router
+1. canActivate사용을 위한 guard생성
+```
+ng generate guard auth/auth
+```
+2. /auth/auth.guard.ts 
+```
+import { Injectable } from '@angular/core';
+import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from '@angular/router';
+import { Observable } from 'rxjs';
 
+@Injectable({
+    providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+
+    login = false;
+
+    constructor(private router: Router) { }
+
+    canActivate() {
+        if(!this.login) {
+            this.router.navigate(['list']); //강제이동될 페이지
+            alert('로그인을 해주세요.');
+            return false;
+        }
+        return true;
+    }
+}
+```
+3. app-routing.module.ts
+```
+import { AuthGuard } from './auth/auth.guard'; //canActivate
+...
+{path:'detail', component:DetailComponent, data: {animation: 'hero'}, canActivate: [AuthGuard]}, //canActivate
+```
 
 출처 : https://poiemaweb.com/angular-integrate-jquery-plugin
