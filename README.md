@@ -33,11 +33,14 @@ json-server --watch db.json
 ```
 3. http://localhost:3000 로 접근이 가능해짐
 4. service 생성을 통해 서버에 요청하고 통합관리해준다.
-5. 구현할 컴포넌트에서 
+5. 구현할 컴포넌트에서 'subscribe' 메소드를 통해 옵저버블을 구독하여 서비스내용들을 받아온다. 
 
+<hr/>
 
 ## 리액티브 폼
 https://angular.io/guide/reactive-forms
+
+<hr/>
 
 ## 제이쿼리 
 https://poiemaweb.com/angular-integrate-jquery-plugin
