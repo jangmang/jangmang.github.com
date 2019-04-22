@@ -29,7 +29,7 @@ npm install -g json-server
 ```
 json-server --watch db.json
 ```
-http://localhost:3000 로 접근이 가능해짐
+- http://localhost:3000 로 접근이 가능해짐
 
 
 ## 리액티브 폼
