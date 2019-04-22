@@ -10,7 +10,7 @@ Angular Essentials(서재425page~)
 ```
 npm install -g json-server
 ```
-- db.json작성
+2 db.json작성
 ```
 {
   "todos": [
@@ -27,13 +27,13 @@ npm install -g json-server
   ]
 }
 ```
-2. 아래의 명령어로 json-server를 실행한다. 생성한 db.json파일의 변경을 감시하도록 옵션을 지정
+3. 아래의 명령어로 json-server를 실행한다. 생성한 db.json파일의 변경을 감시하도록 옵션을 지정
 ```
 json-server --watch db.json
 ```
-3. http://localhost:3000 로 접근이 가능해짐
-4. service 생성을 통해 서버에 요청하고 통합관리해준다.
-5. 구현할 컴포넌트에서 'subscribe' 메소드를 통해 옵저버블을 구독하여 서비스내용들을 받아온다. 
+4. http://localhost:3000 로 접근이 가능해짐
+5. service 생성을 통해 서버에 요청하고 통합관리해준다.
+6. 구현할 컴포넌트에서 'subscribe' 메소드를 통해 옵저버블을 구독하여 서비스내용들을 받아온다. 
 
 <hr/>
 
