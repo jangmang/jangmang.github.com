@@ -2,9 +2,11 @@
 - 디렉티브나 컴포넌트는 인스턴스가 생성되고 입력 프로퍼티를 통해 초기값이 지정된 이후에 화면에 표시되는데, 디렉티브나 컴포넌트를 초기화하는 로직이 더 있을 때 사용합니다.
 - ngOnInit은 앵귤러가 컴포넌트를 초기화를 완료했다는 것을 우리에게 알려주기 위해서 만들어졌다.
 
+<hr/>
+
 ## HTTP
-Angular Essentials(서 425p)
-- json-server를 사용하여 REST API Mock서버 구축
+Angular Essentials(서재425page~)
+1. json-server를 사용하여 REST API Mock서버 구축
 ```
 npm install -g json-server
 ```
@@ -25,11 +27,13 @@ npm install -g json-server
   ]
 }
 ```
-- 아래의 명령어로 json-server를 실행한다. 생성한 db.json파일의 변경을 감시하도록 옵션을 지정
+2. 아래의 명령어로 json-server를 실행한다. 생성한 db.json파일의 변경을 감시하도록 옵션을 지정
 ```
 json-server --watch db.json
 ```
-- http://localhost:3000 로 접근이 가능해짐
+3. http://localhost:3000 로 접근이 가능해짐
+4. service 생성을 통해 서버에 요청하고 통합관리해준다.
+5. 구현할 컴포넌트에서 
 
 
 ## 리액티브 폼
