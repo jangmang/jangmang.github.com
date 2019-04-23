@@ -40,8 +40,10 @@ json-server --watch db.json
 <hr/>
 
 ## 리액티브 폼
-https://angular.io/guide/reactive-forms
+- 리액티브 폼은 컴포넌트 클래스에서 폼 요소의 값 및 유효성 검증 상태를 관리하즞 자바스크립트 객체인 폼 모델(FormGroup, FormControl, FormArray)을 직접 정의/생성한다.
+- form*접두사가 붙은 디렉티브 formGroup, formGroupName, formControlName, formArrayName를 사용하여 템플릿의 폼 요소와 컴포넌트 클래스의 홈 모델을 프로퍼티 바인딩으로 연결한다. 
 
+https://angular.io/guide/reactive-forms
 https://stackblitz.com/edit/reactive-form-exam
 
 <hr/>
