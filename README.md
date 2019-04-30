@@ -40,6 +40,7 @@ json-server --watch db.json
 <hr/>
 
 ## 리액티브 폼
+- 반응형 폼 화면에 있는 입력 필드의 값이 변경될 때마다 원하는 로직이 실행하게 하는 모델-드리븐 방식의 폼입니다.
 - 리액티브 폼은 컴포넌트 클래스에서 폼 요소의 값 및 유효성 검증 상태를 관리하는 자바스크립트 객체인 폼 모델(FormGroup, FormControl, FormArray)을 직접 정의/생성한다.
 - form* 접두사가 붙은 디렉티브(formGroup, formGroupName, formControlName, formArrayName)를 사용하여 템플릿의 폼 요소와 컴포넌트 클래스의 홈 모델을 프로퍼티 바인딩으로 연결한다. 
 
