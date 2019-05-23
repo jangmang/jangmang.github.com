@@ -6,6 +6,9 @@
 
 <hr/>
 
+## 앵귤러 safe pipe
+https://medium.com/@swarnakishore/angular-safe-pipe-implementation-to-bypass-domsanitizer-stripping-out-content-c1bf0f1cc36b
+
 ## inline style unsafe해지하기
 ```
 <TS>
