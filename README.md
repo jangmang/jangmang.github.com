@@ -6,6 +6,19 @@
 
 <hr/>
 
+## inline style unsafe해지하기
+```
+<TS>
+import { DomSanitizer } from '@angular/platform-browser';
+private sanitizer: DomSanitizer,
+getStyle(taskType){
+    return this.sanitizer.bypassSecurityTrustStyle(taskType);
+}
+
+<HTML>
+[style]="getStyle(button.attr.style)"
+```
+
 ## HTTP
 Angular Essentials(서재425page~)
 1. json-server를 사용하여 REST API Mock서버 구축
