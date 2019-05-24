@@ -37,6 +37,12 @@ export class SafePipe implements PipeTransform {
 }
 ```
 
+Markup
+```
+<div [innerHtml]="키값 | safe: 'html'"></div>
+<div [style]="키값 | safe: 'style'"></div>
+```
+
 ## inline style unsafe해지하기
 ```
 <TS>
